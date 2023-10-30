@@ -3,7 +3,7 @@ import os
 from uuid import uuid4
 
 
-TMP_FOLDER_NAME='project_midterm'
+TMP_FOLDER_NAME= "project_midterm"
 # create folder if not exist
 
 def create_if_not_exists(path:str):
@@ -21,9 +21,10 @@ def get_tmp_folder_path():
 def get_unique_tmp_file_path():
     file_path = os.path.join(get_tmp_folder_path(), str(uuid4()))
     return file_path
+
 # here we will create a unique path for file and append its suffiz
 def create_unique_tmp_file(file_suffix:str):
-    return f'{get_tmp_folder_path()}_{file_suffix}'
+    return f'{get_unique_tmp_file_path()}_{file_suffix}'
 
 
 # write binary file data on the file created

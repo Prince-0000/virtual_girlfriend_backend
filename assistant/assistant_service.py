@@ -8,7 +8,8 @@ from chat.chat_service import handle_get_response_for_user
 # get file path
 def __get_transcode_audio_file_path(data: bytes) -> str:
     local_file_path = persist_binary_file_locally(data, file_suffix='user_audio.mp3')
-    local_output_file_path = create_unique_tmp_file(file_suffix='transcoded_user_audio.mp3')
+    print("create unique_temp_file")
+    local_output_file_path = create_unique_tmp_file(file_suffix='transcode_user_audio.mp3')
 
     # pass input and output file path
     convert_file_to_readable_mp3(
@@ -20,8 +21,12 @@ def __get_transcode_audio_file_path(data: bytes) -> str:
 
 async def handle_audio_from_user(file: bytes)->str:
     # find or create path for input and output file and call (stt) transciption
-
-    print("we recieved the audio")
+    """
+           Entrypoint
+       :param file:
+       :return:
+       """
+    print("handle  audio from user")
     transcode_user_audio_file_path = __get_transcode_audio_file_path(file)
     print("we recieved the audio_file_path",transcode_user_audio_file_path)
     pass
