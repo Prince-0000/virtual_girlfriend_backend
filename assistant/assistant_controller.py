@@ -5,7 +5,7 @@ from assistant.assistant_service import handle_audio_from_user
 controller = APIRouter(prefix='/voice-assistant')
 
 
-# pass the binaryfile using this fucntion
+# pass the binaryfile using this function
 # here we are getting audio file from bac
 @controller.post('/audio-message', status_code=200)
 async def handel_receive_audio_data(file: UploadFile):
