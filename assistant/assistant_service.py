@@ -29,9 +29,9 @@ async def handle_audio_from_user(file: bytes)->str:
     print("handle  audio from user")
     transcode_user_audio_file_path = __get_transcode_audio_file_path(file)
     print("we recieved the audio_file_path",transcode_user_audio_file_path)
-    pass
     # # call stt
-    # transcription_content_text = convert_audio_to_text(transcode_user_audio_file_path)
+    transcription_content_text = convert_audio_to_text(transcode_user_audio_file_path)
+    print(transcription_content_text)
     # text_content = transcription_content_text['text']
     #
     #
