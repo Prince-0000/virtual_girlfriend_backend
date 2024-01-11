@@ -14,4 +14,4 @@ async def handel_receive_audio_data(file: UploadFile):
     generate_ai_audio_file_path = await handle_audio_from_user(file_data)
     print(generate_ai_audio_file_path)
     # # we may not need this line
-    # return FileResponse(generate_ai_audio_file_path, media_type='audio/mpeg', filename='ai_output')
+    return FileResponse(generate_ai_audio_file_path, media_type='audio/mpeg', filename='ai_output')
