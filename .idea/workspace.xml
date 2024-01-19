@@ -5,16 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="430e1c72-4272-4dc8-8349-a14d03046933" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ai.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ai.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistant/assistant_controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/assistant_controller.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assistant/assistant_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/assistant/assistant_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_handeling/audio_generation_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/audio_handeling/audio_generation_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/audio_handeling/output.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chat/chat_service.py" beforeDir="false" afterPath="$PROJECT_DIR$/chat/chat_service.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.mp3" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -131,5 +122,16 @@
       <updated>1698681583609</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
