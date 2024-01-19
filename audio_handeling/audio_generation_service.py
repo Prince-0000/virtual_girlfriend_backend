@@ -1,19 +1,3 @@
-# import boto3
-#
-# polly_client = boto3.client('polly')
-#
-#
-# def convert_text_to_audio(text_content: str):
-#     response = polly_client.synthesize_speech(
-#         Engine='standard',
-#         LanguageCode='en-US',
-#         OutputFormat='mp3',
-#         Text=text_content,
-#         VoiceId='Brian'
-#     )
-#     return response
-
-
 """Synthesizes speech from the input string of text or ssml.
 Make sure to be working in a virtual environment.
 
@@ -38,12 +22,17 @@ def convert_text_to_audio(transcription_content_text: str):
     # Build the voice request, select the language code ("en-US") and the ssml
     # voice gender ("neutral")
     voice = texttospeech.VoiceSelectionParams(
-        language_code="en-US", ssml_gender=texttospeech.SsmlVoiceGender.NEUTRAL
+        language_code="en-IN", ssml_gender=texttospeech.SsmlVoiceGender.FEMALE
     )
 
     # Select the type of audio file you want returned
+    # effects_profile_id = "handset-class-device"
     audio_config = texttospeech.AudioConfig(
-        audio_encoding=texttospeech.AudioEncoding.MP3
+        audio_encoding=texttospeech.AudioEncoding.MP3,
+        pitch=6,  # lower than default
+        speaking_rate=1,  # faster than default
+
+        # effects_profile_id=[effects_profile_id]
     )
 
     # Perform the text-to-speech request on the text input with the selected
