@@ -1,8 +1,8 @@
-from utils.file_utils import persist_binary_file_locally, create_unique_tmp_file
-from transcoding.transcoding_service import convert_file_to_readable_mp3
-from audio_handeling.audio_transcription_service import convert_audio_to_text
-from chat.chat_service import handle_get_response_for_user
-from audio_handeling.audio_generation_service import convert_text_to_audio
+from app.utils.file_utils import persist_binary_file_locally, create_unique_tmp_file
+from app.transcoding.transcoding_service import convert_file_to_readable_mp3
+from app.audio_handeling.audio_transcription_service import convert_audio_to_text
+from app.chat.chat_service import handle_get_response_for_user
+from app.audio_handeling.audio_generation_service import convert_text_to_audio
 
 
 # get file path

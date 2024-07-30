@@ -1,6 +1,6 @@
-from fastapi import APIRouter, Form, UploadFile
+from fastapi import APIRouter, UploadFile
 from fastapi.responses import FileResponse
-from assistant.assistant_service import handle_audio_from_user
+from app.assistant.assistant_service import handle_audio_from_user
 
 controller = APIRouter(prefix='/voice-assistant')
 

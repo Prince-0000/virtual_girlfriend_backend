@@ -7,8 +7,12 @@ from project_config import setup_app_config
 
 # initialise all the variable
 setup_app_config()
-app=FastAPI()
+app = FastAPI()
 
+
+@app.get("/healthcheck")
+async def health_check():
+    return {"message": "The health check is successful"}
 
 origins =[
     "http://localhost",

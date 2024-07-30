@@ -1,7 +1,7 @@
 from langchain.chat_models import ChatOpenAI
 from langchain.memory import ConversationBufferMemory
 from langchain.chains import ConversationChain
-from project_config import setup_app_config
+from app.project_config import setup_app_config
 
 # import the keys using app_config
 
