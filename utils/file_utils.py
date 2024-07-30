@@ -30,11 +30,12 @@ def create_unique_tmp_file(file_suffix:str):
 # write binary file data on the file created
 
 def persist_binary_file_locally (data:bytes,file_suffix:str)->str:
-    file_path= create_unique_tmp_file(file_suffix)
-    with open(file_path,'wb') as f:
-        f.write(data)
+    if data is not None:
+        file_path= create_unique_tmp_file(file_suffix)
+        with open(file_path,'wb') as f:
+            f.write(data)
 
-    return file_path
+        return file_path
 
 if __name__=="__main__":
     print(get_tmp_folder_path())
