@@ -1,5 +1,5 @@
 import os
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "C:/Users/Dell/OneDrive/Documents/neat-resolver-402713-4c84d4645c4b.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "app/neat-resolver-402713-4c84d4645c4b.json"
 from google.cloud import texttospeech
 
 
